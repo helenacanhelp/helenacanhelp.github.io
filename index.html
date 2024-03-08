@@ -1,229 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Helena Farrell Paulsen">
-    <meta name="description" content="resume website">
-    <title>HELENA FARRELL PAULSEN</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Helena Farrell CV</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+        body {
+            font-family: Montserrat, sans-serif;
+            line-height: 1.42;
+            font-size: 1.2rem;
+            background-image: url("background.png");
+            background-color: #212121;
+            color: #f6f1d8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            color: #f6f1d8;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-family: Unbounded, sans-serif;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        nav a {
+            color: #f6f1d8;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-family: Unbounded, sans-serif;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            margin-right: 10px;
+        }
+
+        p {
+            padding: 0px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: "—     ";
+            line-height: 1.5;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        .listhead {
+            font-weight: 700;
+        }
+
+        .bigintro {
+            font-size: 1.5rem;
+        }
+
+        .content {
+            margin-left: 0;
+        }
+
+        .place {
+            font-weight: 700;
+            font-size: 0.9rem;
+            line-height: 1em;
+            margin-bottom: 0px;
+        }
+
+        .location, .when {
+            font-size: 0.9rem;
+            line-height: 1em;
+            margin-bottom: 0px;
+            margin-top: 10px;
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 1.5rem; 
+            line-height: 1em;
+            margin-top: 0px;
+        }
+
+        .topic {
+         margin-bottom: 1em;
+        border-top: solid 2px;
+        padding-top: 5px;
+        }
+
+        .bio {
+            border-color: #ecb116;
+        }
+
+        .education {
+            border-color: #cd542b;
+        }
+
+        .edlist::marker {
+            color: #cd542b;
+        }
+
+        .experience {
+            border-color: #4d72e2;
+        }
+
+        .explist::marker {
+            color: #4d72e2;
+        }
+
+        .skills {
+            border-color: #a59e98;
+        }
+
+        .sklist::marker {
+            color: #a59e98;
+        }
+
+        .thatsme {
+            font-weight: 700;
+        }
+
+        @media (min-width: 600px) {
+            h2 {
+                margin-top: 0;
+                margin-bottom: 0;
+                display: inline-block;
+                width: 20%;
+            }
+            .content {
+                display: inline-block;
+                width: 78%;
+                vertical-align: top;
+            }
+        }
+    </style>
 </head>
+<body>
 
 <header>
-    <div class="head-name">helena farrell paulsen</div>
-    <div class="head-links"><p>email <span class="circle-one">&#9679;</span></p><p>linkedin <span class="circle-two">&#9679;</span></p><p>github <span class="circle-three">&#9679;</span></p></div>
+    <h1>Helena Farrell</h1>
+    <nav>
+        <a href="LINK HERE" target="_blank">Portfolio</a>
+        <a href="https://www.linkedin.com/in/helenacanhelp" target="_blank">LinkedIn</a>
+    </nav>
 </header>
 
-<body>
-    <!-- Resume Header -->
-    <div class="resume-title">
-        <h1><span>RESUME</span></h1>
-    </div>
+<div class="container">
 
-    <hr class="rounded-thick">
-
-    <!-- Skills -->
-    <div class="resume-content">
-        <div class="resume-subtitle"><h2>SKILLS</h2></div>
-
-        <hr class="rounded-thin">
-
-        <div class="resume-category">
-            <div class="category-container">
-                <div class="category-left-first">
-                    <h3><mark>Information</mark></h3>
-                </div>
-                <div class="category-right-first">
-                    <ul class="bullet-points">
-                        <li>organize with sql, xml</li>
-                        <li>visualise with powerbi, tableau</li>
-                        <li>catalog with marc 21, dublin core</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="category-container">      
-                <div class="category-left">
-                    <h3><mark>Computing</mark></h3>
-                </div>
-                <div class="category-right">    
-                    <ul class="bullet-points">
-                        <li>code with python, html, css, js</li>
-                        <li>design with adobe creative cloud</li>
-                    </ul>
-                </div>  
-            </div>
-            <div class="category-container">
-                <div class="category-left">
-                    <h3><mark>Administration</mark></h3>
-                </div>
-                <div class="category-right">
-                    <ul class="bullet-points">
-                        <li>process receivables, constituent data</li>
-                        <li>write copy for web, external comms</li>
-                        <li>manage collections, budgets, endowments</li>
-                    </ul>                
-                </div>
-            </div>    
+    <section id="bio">
+        <h2 class="topic bio">Hello</h2>
+        <div class="content">
+            <p class="bigintro">I'm <span class="thatsme">Helena Farrell</span>, an information professional with 5+ years of experience in nonprofit admin. I'm a database engineer, report writer, gift processor, designer, and project manager.</p>
         </div>
+    </section>
 
-        <hr class="rounded-thin">
-
-        <!-- Education -->
-        <div class="resume-subtitle"><h2>EDUCATION</h2></div>
-
-        <hr class="rounded-thin">
-
-        <div class="resume-category">
-            <div class="category-container">
-                <div class="category-left-first">
-                    <div class="when"><span>2024</span></div>
-                    <div class="what"><span><mark>Master of Library and Information Science</mark></span></div>
-                    <div class="where"><span>University of Washington</span></div>
-                </div>
-                <div class="category-right-first">
-                    <ul class="bullet-points">
-                        <li>summa cum laude</li> 
-                        <li>systems, research, and reference librarianship</li>
-                    </ul>    
-                </div>
-            </div>    
+    <section id="education">
+        <h2 class="topic education">Education</h2>
+        <div class="content">
+            <p><span class="place">University of Washington</span> <span class="location">| Seattle, WA</span></p>
+            <p><span class="title">Master of Library and Information Science</span></p>
+            <ul>
+                <li class="edlist"><span class="listhead">Coursework:</span> Systems Librarianship; Relational Database Management Systems; Web Development; Design Methods for Librarianship; Management of Information Organizations.</li>
+                 <li class="edlist"><span class="listhead">Projects:</span> Fieldwork analysis of UW iSchool tech core curriculum; ongoing design and implementation of digital poetry repository in partnership with the Washington State Poet Laureate and ArtsWA.</li>
+            </ul>
+            <p><span class="place">Champlain College</span> <span class="location">| Burlington, VT</span></p>
+            <p class="title">Bachelor of Science in Professional Writing</p>
+            <ul>
+                <li class="edlist"><span class="listhead">Projects:</span> Coordination, copyediting, and layout design for Viscera, a fiction anthology; design support for various projects of the Champlain College Publishing Initiative.</li>
+                <li class="edlist"><span class="listhead">Awards:</span> Best in Fiction, 2018; Best in Publishing, 2018.</li>
+            </ul>
         </div>
-        <div class="category-container">
-            <div class="category-left">
-                <div class="when"><span>2018</span></div>
-                <div class="what"><span><mark>Bachelor of Science in Professional Writing</mark></span></div>
-                <div class="where"><span>Champlain College</span></div>
-            </div>
-            <div class="category-right">
-                <ul class="bullet-points">
-                    <li>magna cum laude</li>
-                    <li>best in fiction, 2018</li>
-                    <li>best in publishing, 2018</li>
-                </ul>
-            </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="topic experience">Experience</h2>
+        <div class="content">
+            <p><span class="place">The Evergreen State College</span> <span class="location">| Olympia, WA</span></p>
+            <p class="title">Fiscal Specialist II, Gifts and Reporting Analyst</p>
+            <p class="when expcallout">Apr. 2021 - Present</p>
+            <ul>
+                <li class="explist"><span class="listhead">Managed all Foundation fundraising receivables.</span> Processed and reconciled over 8,300 individual gifts, bringing the Foundation's campaign total from $22.5M in April 2021 to $53.6M in January 2024.</li>
+                <li class="explist"><span class="listhead">Reported on fundraising outcomes to College leadership.</span> Developed a suite of 11 new campaign impact metrics and graphics shared monthly with the Board of Trustees. Served as Staff Representative to the Board of Trustees in the 2023-2024 term.</li>
+                <li class="explist"><span class="listhead">Improved critical Foundation data infrastructure.</span> Converted historical files from onsite server to Sharepoint. Created Access database tracking 10 years of growth for over 140 endowed funds.</li>
+                <li class="explist"><span class="listhead">Created and tracked spending on the annual scholarship budget.</span> Grew budget from $981k in available funds in 2020-2021 to $1.17M in 2023-2024.</li>
+                <li class="explist"><span class="listhead">Promoted a culture of ethical data storytelling.</span> Proposed new ethical data guidelines and chaired the Foundation's Data Governance work group from 2022-2024. Led trainings on gift policy compliance, gift querying, and responsible use of generative AI tools.</li>
+            </ul>
+            <p><span class="place">Forest Ridge School</span> <span class="location">| Bellevue, WA</span></p>
+            <p class="title">Development Associate</p> 
+            <p class="when">Apr. 2019 - Dec. 2020</p>
+            <ul>
+                <li class="explist"><span class="listhead">Maintained the physical office space.</span> Archived over 20 years of historical documentation and grant research, ensured cleanliness and consistent organization, received and sent office mail.</li>
+                <li class="explist"><span class="listhead">Modernized Development team's data storage.</span> Participated in Raiser's Edge database cleaning and conversion of locally-stored events data to Auctria database.</li>
+            </ul>
+            <p><span class="place">Portland Museum of Art</span> <span class="location">| Portland, ME</span></p>
+            <p class="title">Philanthropy Assistant, Stewardship and Events</p> 
+            <p class="when">May 2018 - Mar. 2019</p>
+            <ul>
+                <li class="explist"><span class="listhead">Acknowledged all Museum donors and new members.</span> Rewrote standard tax letters and reduced acknowledgement turnaround time from 2 weeks to 48 hours.</li>
+                <li class="explist"><span class="listhead">Assisted in high-profile gallery opening events.</span> Ensured seamless delivery of 9 Director's Circle gallery openings by managing registration, day-of setup, and third-party vendors.</li>
+            </ul>
+            <p><span class="place">Hands On Children's Museum</span> <span class="location">| Olympia, WA</span></p>
+            <p class="title">Events and Development Intern</p>
+            <p class="when">May 2017 - Aug. 2017</p>
+            <ul>
+                <li class="explist"><span class="listhead">Supported all stages of event delivery for summer programming.</span> Managed outreach, setup, tear-down, and post-event communications for 2017 Summer Splash! program, nominated for Best Event by King 5 News.</li>
+            </ul>
         </div>
-    </div>
+    </section>
 
-        <hr class="rounded-thin">  
-
-        <!-- Experience -->
-        <div class="resume-subtitle"><h2>EXPERIENCE</h2></div>
-        
-        <hr class="rounded-thin">
-
-        <div class="resume-category">
-            <div class="category-container">
-                <div class="category-left-first">
-                    <div class="when">2021 - 2024</div>
-                    <div class="what"><mark>Gifts and Reporting Analyst</mark></div>
-                    <div class="where">The Evergreen State College</div>
-                </div>
-                <div class="category-right-first">
-                    <ul class="bullet-points">
-                        <li>book all foundation receivables</li>
-                        <li>create and track scholarship budget</li>
-                        <li>develop and integrate new impact metrics</li>
-                        <li>retrieve information from multiple databases</li>
-                        <li>supervise gifts and reporting assistant</li>
-                    </ul>
-                </div>
-            </div>     
-        <div class="category-container">
-            <div class="category-left">
-                <div class="when">2019 - 2021</div>
-                <div class="what"><mark>Development Associate</mark></div>
-                <div class="where">Forest Ridge School</div>
-            </div>
-            <div class="category-right">
-                <ul class="bullet-points">
-                    <li>support development and marketing teams</li>
-                    <li>edit marketing and communications copy</li>
-                    <li>research and report new funding opportunities</li>
-                </ul>
-            </div>
+    <section id="skills">
+        <h2 class="topic skills">Extras</h2>
+        <div class="content">
+            <ul>
+                <li class="sklist"><span class="listhead">Skills:</span> Project management; data entry; database administration; finance and impact reporting; reconciliation; calendar management; mass communication; copy writing and editing; web design; HTML; CSS; SQL; Python.</li>
+                <li class="sklist"><span class="listhead">Tools:</span> Microsoft Office suite; Microsoft Sharepoint; Blackbaud Raiser's Edge; Blackbaud Merchant Services; Tableau; GPT-4; Adobe Acrobat DC; Adobe Photoshop; Adobe InDesign; SQL Studio; Visual Studio Code.</li>
+                <li class="sklist"><span class="listhead">Certifications:</span> Blackbaud Raiser's Edge Professional Certification.</li>
+                <li class="sklist"><span class="listhead">Memberships:</span> Washington Library Association; Council for the Advancement and Support of Education.</li>
+            </ul>
         </div>
-        <div class="category-container">
-            <div class="category-left">
-                <div class="when">2018 - 2019</div>
-                <div class="what"><mark>Philanthropy Assistant</mark></div>
-                <div class="where">Portland Museum of Art</div>
-            </div>
-            <div class="category-right">
-                <ul class="bullet-points">
-                    <li>organize gallery opening events</li>
-                    <li>produce membership and gift acknowledgements</li>
-                    <li>draft copy for museum collateral and mailings</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    </section>
 
-        <hr class="rounded-thin">
+</div>
 
-        <!-- Projects -->
-        <div class="resume-subtitle"><h2>PROJECTS</h2></div>
-
-        <hr class="rounded-thin">
-
-        <div class="resume-category">
-            <div class="category-container">
-                <div class="category-left-first">
-                    <div class="when">2024</div>
-                    <div class="what"><mark>WA State Queer Poetry Anthology</mark></div>
-                    <div class="where">WA State Poet Laureate</div>
-                </div>
-                <div class="category-right-first">
-                    <ul class="bullet-points">
-                        <li>partner with artswa and humanities washington</li>
-                        <li>develop online archive for collection</li>
-                        <li>create metadata schema and cv for tag system</li>
-                    </ul>
-                </div>
-            </div>
-        <div class="category-container">
-            <div class="category-left">
-                <div class="when">2022</div>
-                <div class="what"><mark>UW iSchool Tech Core Curriculum</mark></div>
-                <div class="where">University of Washington</div>
-            </div>
-            <div class="category-right">
-                <ul class="bullet-points">
-                    <li>analyze ischool tech core curriculum</li>
-                    <li>survey industry partners</li>
-                    <li>propose curriculum improvements</li>
-                </ul>
-            </div>
-        </div>
-        <div class="category-container">
-            <div class="category-left">
-                <div class="when">2018</div>
-                <div class="what"><mark>Viscera Anthology</mark></div>
-                <div class="where">Champlain College</div>
-            </div>
-            <div class="category-right">
-                <ul class="bullet-points">
-                    <li>manage outreach and submissions</li>
-                    <li>design layout for printed anthology</li>
-                    <li>host series of reading and networking events</li>
-                </ul>
-            </div>
-        </div>
-     </div>    
-
-        <hr class="rounded-thick">
-
-        <!-- Contact -->
-        <div class="resume-subtitle"><h2>HOW CAN I HELP?</h2></div>
-        <div class="resume-category">
-            <div class="category-both"><p>i offer freelance <mark>archival, research, and design</mark> services.</p>
-            <p>to get in touch, email me at <mark>helenafarrellpaulsen@gmail.com.</mark></p></div>
-        </div>
-    </div>
 </body>
-<footer>
-    <div class="bottom-text">designed by hfp.</div>
-</footer>
 </html>
