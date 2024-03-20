@@ -1,2 +1,2 @@
 # helenacanhelp.github.io
-Helena Farrell Paulsen's personal site.
+Helena Farrell's personal site.
